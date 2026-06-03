@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loom"
+version = "0.1.0"
+authors = [
+  { name = "William", email = "wavrusawi@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    # Add your project's runtime dependencies here
+    # e.g., "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/wavrusawi-tech/loom"
+Issues = "https://github.com/wavrusawi-tech/loom/issues"
+
+[tool.setuptools]
+packages = ["my_package"]
