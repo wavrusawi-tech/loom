@@ -3,6 +3,8 @@ import datetime
 ## Post metadata setup
 class PostConfig:
     comments_allowed = False
+    def __init__(self, comments_allow: bool):
+        self.comments_allowed = comments_allow
     class PostTextConfig:
         title_size = 26
         heading_one_size = 20
@@ -19,6 +21,7 @@ class PostConfig:
 ## Post setup
 class Post:
     created_at = None
-    def __init__(self, config: PostConfig):
+    def __init__(self, text_config: PostConfig.PostTextConfig, config: PostConfig):
         created_at = datetime.datetime.now()
+        txt_conf = text_config
         
